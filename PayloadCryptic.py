@@ -174,7 +174,7 @@ def main():
         else:
             key = bytes([random.randint(0, 255) for _ in range(16)])
 
-    print(Fore.GREEN + f'[#] Settings:\n\tEncryption Method: {args.method}\n\tEncryption {"key" if args.method != "caesar" else "shift"}: {', '.join(f'0x{b:02x}' for b in key) if args.method != 'caesar' else key}' + Fore.RESET)
+    print(Fore.GREEN + f'[#] Settings:\n\tEncryption Method: {args.method}\n\tEncryption {"key" if args.method != "caesar" else "shift"}: {key}' + Fore.RESET)
 
 
 
